@@ -24,6 +24,7 @@ public class ConsultasDAO {
         try {
             this.con = provider.getConnection();
             String sql = provider.getConsultarFacturas();
+            System.out.println("Consultando facturas: " + sql);
             PreparedStatement pstm = this.con.prepareStatement(sql);
             ResultSet rs = pstm.executeQuery();
             FacturaMapper mapper = provider.getFacturaMapper();

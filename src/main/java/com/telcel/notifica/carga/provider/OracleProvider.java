@@ -16,12 +16,14 @@ public class OracleProvider implements DatabaseProvider {
 
     @Override
     public String getConsultarFacturas() {
-        return OracleSQL.CONSULTA_FACTURAS;
+        //return OracleSQL.CONSULTA_FACTURAS;
+        return OracleSQL.CONSULTA_FACTURAS_CPS;
     }
 
     @Override
     public String getActualizarFactura() {
-        return OracleSQL.ACTUALIZA_FACTURA;
+        //return OracleSQL.ACTUALIZA_FACTURA;
+        return OracleSQL.ACTUALIZA_FACTURA_CPS;
     }
 
     @Override
